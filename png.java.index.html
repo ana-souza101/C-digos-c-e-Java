@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Principal</a>
+        <br>
+        <a href="./TinkerCard.html">Arduino e Microcontrolador</a>
+        <br>
+        <a href="./pgnC++.html">C++</a>
+        <br>
+        <a href="./png.java.index.html">Java</a>
+    </nav>
+    <h1>Descrevendo os comandos usados Java:</h1>
+    <br>
+    <p>
+        <pre>
+            Import java.util.Scanner;
+        
+        O import faz a adição da biblioteca java.util que importa a classe scanner.
+        
+        Scanner sc = new Scanner(System.in);
+        O Scanner é usado para fazer a leitura dos dados do teclado do computador.
+        
+        
+        Int pot1= 0, pot2 = 0, res =0;
+        
+        A linha que define “ Int pot1= 0, pot2 = 0, res =0;” significa que existe uma declaração de variável do tipo inteiro cujo o significado é “ Int nome da variável = valor”.
+        
+        boolean led = false;
+        
+        A linha define “ boolean led = false” significa que existe uma descrição de variável do tipo boolean cujo significado é “ boolean nome da variável = valor”.
+        
+        
+        System.out.println(“Digite o valor do sensor potenciômetro1:  “);
+        
+        A linha do comando “ System.out.println” significa imprime na tela “a frase digitada” e pula para a próxima linha. 
+        
+        pot1 = sc.nextlnt();
+        
+        A linha do comando “sc.nextlnt();” significa que o scanner vai ler do teclado um número do string e converter em inteiro para ser armazenado na variável “ num”.
+        
+        System.out.println(“Digite o valor do sensor potenciômetro2:  “);
+        
+        A linha do comando “ System.out.println” significa imprime na tela “a frase digitada” e pula para a próxima linha. 
+        
+        Pot2 = sc.nextlnt();A linha do comando “sc.nextlnt();” significa que o scanner vai ler do 
+        teclado um número do string e converter em inteiro para ser armazenado na variável “ num”.
+        
+        If{(pot > pot2)};
+        
+        A linha do comando “if(CONDIÇÃO) {significa que existe estrutura condicional do SE(CONDIÇÃO) no código onde como a CONDIÇÃO seja verdadeira, são executados do bloco
+        Res= pot1 + pot2;
+        
+        A linha “ res = pot1 + pot2;” significa que será somado os valores das variáveis “pot1” e “pot2” com o valor da variável “res”.
+        led = true;
+        
+        A linha “led = true;” significa que é atribuído o valor “true” para a  variável “ led”.
+        
+        }else{
+        
+        A linha do comando “}else{“ significa que é a continuação da estrutura condicional if ELSE no código, onde  caso a CONDIÇÃO do IF seja falsa, então são encontrados os comandos do bloco ELSE{}.
+        
+        Led = false ;
+        
+        A linha “ led = false;” significa que é atribuído o valor “ false” para variável led.
+        </pre>
+        </p>
+        <br>
+        <h2>Exemplo de código Java no IntelliJ:</h2>
+        <div>
+            <img src="codigo java02.png" alt="">
+        </div>
+        <br>
+        <h2>Exemplo escrito de código Java:</h2>
+        <br>
+        <p>
+            <code>
+                <pre>
+                    import java.util.Scanner;
+
+public class Programa03 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+
+        double num = 0.0;
+        double val = 0.0;
+        double res = 0.0;
+
+        System.out.println("|------------------------------|");
+        System.out.println("|---- Programa Multiplica -----|");
+        System.out.println("|------------------------------|");
+        System.out.println("\n");
+        System.out.print(" Digite o primeiro número: ");
+        num = sc.nextDouble();
+        System.out.println("\n");
+        System.out.print(" Digite o segundo número: ");
+        val = sc.nextDouble();
+        System.out.println("\n");
+        res = num * val;
+        System.out.printf("Fesultado da multiplicação é: %f", res);
+        System.out.println("|------------------------------|");
+
+
+        sc.close();
+    }
+}
+                </pre>
+            </code>
+        </p>
+    </body>
+    </html>

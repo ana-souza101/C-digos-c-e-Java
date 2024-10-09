@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Principal</a>
+        <br>
+        <a href="./TinkerCard.html">Arduino e Microcontrolador</a>
+        <br>
+        <a href="./pgnC++.html">C++</a>
+        <br>
+        <a href="./png.java.index.html">Java</a>
+    </nav>
+    <h1>Descrevendo comandos C++</h1>
+    <br>
+    <p>
+        1.	pinMode(12, OUTPUT);
+        <br>
+    
+        Significa que foi definido pino 12 como saída logo o comando pinmode é uma configuração de entrada / saída.
+        <br>
+        2.	digitalWrite(12, HIGH);
+        <br>
+                    Significa que o comando escreve na saída 12 como ALTO (HIGH) que significa que o pino     12 vai ter 5v. Então se fosse BAIXO (LOW) significa que o pino 12 vai ter 0v.
+        <br>
+        3.	delay(1000);
+        <br>
+                 Significa que comando faz o Arduino esperar (1000 ms) mil milissegundos que é igual a 1 segundo.
+        <br>
+        4.	pinMode(A0, INPUT);
+        <br>
+        Significa que foi definido o pino A0 como entrada analógica. Logo o comando pinMode é uma configuração de entrada / saída analógica.
+        <br>
+        5.	analogRead(A0)
+        <br>
+        Significa que será feita uma leitura da entrada analógica.
+        <br>
+            6. int num
+        <br>
+                  Declara uma variável do tipo inteiro.
+        
+        <br>
+            7.num=5;
+            <br>
+                  Atribui o valor do tipo inteiro igual a 5 para a variável num.
+        <br>
+           8. Serial.begin(9600);
+        <br>
+                 Este comando configura a comunicação serial em 9600 bits por segundo.
+        <br>
+         9. Serial.println(num);
+        <br>
+               Este comando imprime na saída o valor da variável “num”.
+        <br>
+        10.(CONDIÇÃO) { COMANDOS};
+        <br>
+              O comando “if” representa a estrutura condicional C (Condição)
+        <br>
+        11.else {COMANDOS }
+        <br>
+             O comando “else” faz parte da estrutura condicional SE   
+        ( CONDIÇÃO )
+        </p>
+        <br>
+        <div>
+            <img src="código c++ IDE.png" alt="">
+        </div>
+        <br>
+        <h2>Exemplo de código c++ em texto:</h2>
+        <br>
+        <p>// C++ code
+            <br>
+            //
+            int num = 0; // declara uma variável num do tipo inteiro
+            <br>
+            void setup()
+            <br>
+            {
+                <br>
+              pinMode(A0, INPUT); // define o pino A0 como entrada analógica
+              <br>
+              Serial.begin(9600); // configura a comunicação serial com taxa de transmição de 
+              <br>
+              // dados com 9600 bits por segundo
+              <br>
+              pinMode(12, OUTPUT); // define o pino 12 como saída digital
+            <br>
+              num = 0;
+              <br>
+            }
+            <br>
+            void loop()
+            <br>
+            {
+             <br>
+                num = 0; // atribui o valo 0 para a variável num
+                <br>
+              num += analogRead(A0);// acrescenta o valor da entrada 
+              <br>
+               // analógica A0 na variável num
+               <br>
+              if (num >= 500) {  // imprime na porta serial o valor da variável num
+                <br>
+                Serial.println(num);   //compara SE a variável num é maior que 500
+                <br>
+                digitalWrite(12, HIGH);// escreve no pino 12 ALTO(HIGH), ou seja, 5V
+                <br>
+              } else {
+                <br>
+                digitalWrite(12, LOW);// escreve no pino 12 BAIXO(LOW), ou seja, 0V
+                <br>
+              } else {
+                <br>
+              }
+              <br>
+              delay(500); // Wait for 500 millisecond(s)
+            }</p>
+        </body>
+        </html>
